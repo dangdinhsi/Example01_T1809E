@@ -1,0 +1,42 @@
+﻿@model Example01.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Punishment.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Punishment.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RollNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
